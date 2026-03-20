@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+<div class="container-fluid">
+<a class="navbar-brand fw-semibold" href="index.html">Healthcare Management System</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="topNavbar">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Dashboard</a></li>
+<li class="nav-item"><a class="nav-link" href="patients.html">Patients</a></li>
+<li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+<li class="nav-item"><a class="nav-link" href="appointments.html">Appointments</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="container-fluid mt-4">
+<div class="row g-3">
+<aside class="col-lg-3 col-md-4">
+<div class="card sidebar-nav p-3">
+<h5 class="mb-3 border-bottom pb-2">Quick Navigation</h5>
+<ul class="nav nav-pills flex-column gap-2">
+<li class="nav-item"><a class="nav-link active" href="index.html">Dashboard</a></li>
+<li class="nav-item"><a class="nav-link" href="patients.html">Patients Section</a></li>
+<li class="nav-item"><a class="nav-link" href="doctors.html">Doctors Section</a></li>
+<li class="nav-item"><a class="nav-link" href="appointments.html">Appointments Section</a></li>
+</ul>
+</div>
+</aside>
+
+<main class="col-lg-9 col-md-8">
+<div class="row g-3">
+<div class="col-md-4">
+<div class="card bg-primary text-white text-center p-3 h-100">
+<h4>Patients</h4>
+<h2 id="totalPatients"></h2>
+<a href="patients.html" class="btn btn-light mt-2">Manage</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-success text-white text-center p-3 h-100">
+<h4>Doctors</h4>
+<h2 id="totalDoctors"></h2>
+<a href="doctors.html" class="btn btn-light mt-2">Manage</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-warning text-dark text-center p-3 h-100">
+<h4>Appointments</h4>
+<h2 id="totalAppointments"></h2>
+<a href="appointments.html" class="btn btn-dark mt-2">Manage</a>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
